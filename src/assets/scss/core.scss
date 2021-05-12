@@ -1,0 +1,60 @@
+/**
+ * @作者: Seale
+ * @时间: 2021/5/12
+ * @版本: V1.0
+ * @声明: 复用样式请和作者联系
+ * @网站: https://www.imsle.com
+ * @说明: 核心样式
+*/
+
+// 引入变量池
+@import "variables";
+// 引入基础库
+@import "base";
+// 引入响应式
+@import "media";
+
+// 清除浏览器自带的样式
+*{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+// 覆盖浏览器自带的选中背景
+
+::selection {
+  color: #fff;
+  background: #538fd3;
+}
+::-moz-selection{
+  color: #fff;
+  background: #538fd3;
+}
+
+// TODO 字体设置
+
+// TODO 响应式
+
+@media (max-width: map-get($research-medias,xs)) {
+  // 当设备宽度 ≤ 768px 的时候，一般指手机设备
+
+}
+@media (min-width: map-get($research-medias,sm)) {
+  // 当设备宽度 ≥ 768px 的时候，一般指平板设备
+}
+@media (min-width: map-get($research-medias,md)) {
+  // 当设备宽度 ≥ 992px 一般指中型台式机
+
+}
+
+@media (min-width: map-get($research-medias,lg)) {
+  // 当设备宽度 ≥ 1200px 的时候，一般指大型台式机
+
+}
